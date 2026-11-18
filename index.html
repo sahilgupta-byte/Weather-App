@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="weather-app">
+
+        <!-- Header -->
+        <div class="header">
+            <h1>🌤️ Weather App</h1>
+            <p>Check the weather anywhere in the world</p>
+        </div>
+
+
+        <!-- Search -->
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name..."
+            >
+
+            <button id="searchBtn">
+                Search
+            </button>
+
+        </div>
+
+
+        <!-- Weather Information -->
+        <div class="weather-info">
+
+            <h2 id="cityName">Bhopal, IN</h2>
+
+            <div class="weather-icon" id="weatherIcon">
+                🌤️
+            </div>
+
+            <h3 id="temperature">--°C</h3>
+
+            <p id="condition">Search for a city</p>
+
+
+            <!-- Weather Details -->
+            <div class="weather-details">
+
+                <div class="detail-card">
+
+                    <div class="detail-icon">💧</div>
+
+                    <div>
+                        <h4>Humidity</h4>
+                        <p id="humidity">--%</p>
+                    </div>
+
+                </div>
+
+
+                <div class="detail-card">
+
+                    <div class="detail-icon">💨</div>
+
+                    <div>
+                        <h4>Wind Speed</h4>
+                        <p id="wind">-- m/s</p>
+                    </div>
+
+                </div>
+
+
+                <div class="detail-card">
+
+                    <div class="detail-icon">🌡️</div>
+
+                    <div>
+                        <h4>Feels Like</h4>
+                        <p id="feelsLike">--°C</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Powered by OpenWeather</p>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
